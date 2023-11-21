@@ -1,0 +1,289 @@
+/* Шрифты  */
+
+/* НЕ ИСПОЛЬЗУЕТСЯ  */
+@font-face {
+	font-family: utsaah;
+	src: url(assets/font/utsaah-bold.ttf);
+}
+
+p {
+	margin: 0;
+	font-family: sans-serif;
+	font-weight: bold;
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+/* Основа  */
+
+body {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+	background: #1f1f1f;
+}
+
+/* Шапка  */
+header {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	margin: 10 0 10 0;
+}
+
+header p {
+	color: white;
+	font-size: 25px;
+}
+
+/* Панель  */
+.panel {
+	display: flex;
+	justify-content: space-between;
+	border-top: 4px solid #94c289;
+	border-bottom: 4px solid #94c289;
+}
+
+.panel a {
+	font-size: 20px;
+	padding: 15px;
+	color: #89c295;
+}
+
+/* Содержание  */
+
+.content {
+	display: flex;
+	justify-content: center;
+	margin: 10;
+}
+
+/* Подвал  */
+
+footer {
+	margin: 0;
+	padding-top: 10;
+	border-top: 4px solid #94c289;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: end;
+}
+
+footer .social img {
+	border-radius: 3px;
+	width: 25;
+}
+
+footer p {
+	color: white;
+	font-size: 15;
+}
+
+footer .contactInfo {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+
+/* Оглавления */
+.border_head .head {
+	color: #fcd987;
+	font-size: 25;
+	margin: 0 0 5 0;
+}
+
+.border_head {
+	border-bottom: 4px solid #ffd36c;
+}
+
+
+/* Главная  */
+
+.info {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.info .border {
+	margin: 0 10 10 0;
+	padding: 10px;
+	border: 4px solid #94c289;
+	max-width: 600px;
+	min-width: 400px;
+	flex: 0 0 35%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.info .button_more {
+	font-size: 15;
+	text-align: end;
+	color: #89c295;
+}
+
+.info .text p {
+	text-align: center;
+}
+
+.info .text .head {
+	color: #89c295;
+	font-size: 30;
+}
+
+.info .text .subhead {
+	color: #f4d690;
+	font-size: 20;
+}
+
+.info .text .description {
+	color: white;
+	font-size: 15;
+	white-space: normal;
+	margin: 10 0 10 0;
+}
+
+/* Подробнее */
+
+.more p {
+	text-align: center;
+	color: #89c295;
+	font-size: 15;
+	max-width: 1500;
+	white-space: normal
+}
+
+/* Контакты */
+
+.contact {
+	margin: 15;
+}
+
+.contact p {
+	color: white;
+	font-size: 15;
+}
+
+
+.contact .text {
+	margin: 10 0 10 0;
+}
+
+/* О нас */
+
+.aboutUs .infoText .text {
+	max-width: 2000;
+	white-space: normal;
+	color: white;
+	text-align: justify;
+	margin: 30 0 30 0;
+	line-height: 1.5;
+}
+
+.aboutUs .infoText .link {
+	color: #89c295;
+}
+
+.aboutUs .build .image {
+	margin: 10 0 0 0;
+	display: flex;
+	justify-content: center;
+}
+
+/* Наши сотрудники */
+
+.worker .structure .image {
+	display: flex;
+	justify-content: center;
+}
+
+.worker .structure img {
+	margin: 25 0 25 0;
+	width: 1100px;
+}
+
+.worker .person {
+	padding: 10 0 0 0;
+}
+
+.worker .person img {
+	width: 100px;
+	margin-bottom: 20px;
+}
+
+.worker .person {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.worker .person div {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	margin: 5;
+}
+
+.worker .person .name {
+	color: white;
+	font-size: 20;
+	margin-bottom: 10;
+	white-space: normal;
+}
+
+.worker .person .post {
+	color: #f4d690;
+	font-size: 15;
+	white-space: normal;
+}
+
+/* Документация организации */
+
+.doc a {
+	color: white;
+}
+
+.doc p {
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+/* Обрабатывает ссылки */
+
+a[href] {
+	text-decoration: none;
+}
+
+a[href]:hover {
+	color: #f4d690;
+}
+
+a[href]:active {
+	color: #f7ce70;
+}
+
+/* Вкладки */
+
+*[id] {
+	display: none;
+
+}
+
+:target~.info {
+	display: none;
+}
+
+:target {
+	scroll-margin-top: 10000px;
+}
+
+:target {
+	display: block;
+}
